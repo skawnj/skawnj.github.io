@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Python 정렬(sorting), 역순 정렬, 제자리(in-place) 정렬, 구조화 정렬</title>
+    <title>SkawnK's Place - Python, data processing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="SkawnK">
@@ -66,7 +66,7 @@
           <a class="brand" href="/index.html"><img src=http://wondersofdisney.disneyfansites.com/clipart/winniethepooh/pooh/poohhead.png width=25>&nbsp;SkawnK's Place &nbsp;&nbsp;<font style="font-size: 9pt"><br class='visible-phone'><i>"전산쟁이의 삶과 생각, 그리고 IT 팁"</i></font></a>
           <div class="nav-collapse">
             <ul class="nav">
-                  <li class="active">
+                  <li >
                     <a href="/category/python.html">
 						<i class="icon-folder-open icon-large"></i>Python
 					</a>
@@ -86,91 +86,35 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-<section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to Python 정렬(sorting), 역순 정렬, 제자리(in-place) 정렬, 구조화 정렬">
-                                        Python 정렬(sorting), 역순 정렬, 제자리(in-place) 정렬, 구조화 정렬
-                                </a>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-<footer class="post-info">
+        <div class="article">
+                <h1><a href="/pythoneuro-deiteo-gobjibhabcartesian-product-swibge-mandeulgi-gyeonguyi-su-mogrog-jagseonge-hwalyong-ganeung.html">Python으로 데이터 곱집합(Cartesian Product) 쉽게 만들기 - 경우의 수 목록 작성에 활용 가능</a></h1>
+                <div class="well small"><footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2017-08-07T00:00:00+09:00">
-        <i class="icon-calendar"></i>Mon 07 August 2017
+<abbr class="published" title="2018-03-03T00:00:00+09:00">
+        <i class="icon-calendar"></i>Sat 03 March 2018
 </abbr>
 <span class="label">By</span>
 <a href="/author/skawnk.html"><i class="icon-user"></i>Skawnk</a>
 <span class="label">Category</span>
-<a href="/category/python.html"><i class="icon-folder-open"></i>Python</a>.
+<a href="/category/python-data-processing.html"><i class="icon-folder-open"></i>Python, data processing</a>.
 
 
 <span class="label">Tags</span>
-	<a href="/tag/python.html"><i class="icon-tag"></i>python</a>
-	<a href="/tag/data-processing.html"><i class="icon-tag"></i>data processing</a>
-</footer><!-- /.post-info -->                </div>
-                <h1>Python 정렬(sorting), 역순 정렬, 제자리(in-place) 정렬, 구조화 정렬</h1>
+	<a href="/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h1>Python으로 데이터 곱집합(Cartesian Product) 쉽게 만들기 - 경우의 수 목록 작성에 활용 가능</h1>
+<p>곱집합(Cartesian Product)를 아시나요? 생소한 분도 계실 것입니다. 수학의 한 분과인 집합론에 자주 등장하는 개념입니다. 한국어로는 곱집합, 데카르트곱이라고 풀어 쓰기도 합니다.</p>
 <ul>
-<li>일반 정렬(sorting)<ul>
-<li>가장 기본적인 형태의 정렬 방법입니다.</li>
+<li><a href="https://ko.wikipedia.org/wiki/곱집합">위키백과 - 곱집합</a></li>
 </ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span>a = [2, 1, 5, 4, 3]
-b = sorted(a)
-print(a) # [2, 1, 5, 4, 3]
-print(b) # [1, 2, 3, 4, 5]
-</pre></div>
+<p>읽기 어렵고 번거로우시죠? 쉽게 설명드릴게요.</p>
+<blockquote>
+<p>한 학급에 여학생 세 명, 남학생 두 명이 …</p></blockquote>
+                        <a class="btn primary xsmall" href="/pythoneuro-deiteo-gobjibhabcartesian-product-swibge-mandeulgi-gyeonguyi-su-mogrog-jagseonge-hwalyong-ganeung.html">본문 읽기</a>
+                </div>
+        </div>
+        <hr />
 
-
-<ul>
-<li>제자리 정렬(in-place sorting)<ul>
-<li>제자리 정렬을 사용하면 정렬할 대상이 담겨 있는 변수 자체를 정렬된 형태로 바꿔 버립니다. 기존의 정렬되기 전의 모습은 잃게 됩니다.</li>
-<li>정렬된 결과를 assign할 l-value는 필요 없습니다.</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span>a = [2, 1, 5, 4, 3]
-a.sort()
-print(a) # [1, 2, 3, 4, 5]
-</pre></div>
-
-
-<ul>
-<li>역순 정렬(reverse sorting)<ul>
-<li>reverse 인자를 True로 줌으로써 내림차순 정렬을 할 수 있습니다.</li>
-<li>reverse 인자는 default로 False 상태입니다. reverse가 False면 정순(정방향) 정렬을 합니다.</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span>a = [2, 1, 5, 4, 3]
-b = sorted(a, reverse=True)
-a.sort(reverse=True)
-print(a) # [5, 4, 3, 2, 1]
-print(b) # [5, 4, 3, 2, 1]
-</pre></div>
-
-
-<ul>
-<li>구조화 정렬(structured sorting)<ul>
-<li>정렬할 element들이 정렬 가능한 스칼라 값이 아닐 때, 어떤 기준으로 정렬을 수행할지 명시해 주어야 합니다.</li>
-<li>key 인자에 lambda 함수를 주어 그 기준을 명시할 수 있습니다. lambda 함수 대신 일반적으로 정의된 함수를 사용할 수도 있습니다.</li>
-<li>2차 tuple들의 list를 정렬하되(element는 tuple) 각 tuple의 두 번째 항목을 기준으로 하라는 기준을 제시해 보았습니다.</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span>a = [(&#39;a&#39;, 2), (&#39;b&#39;, 1), (&#39;c&#39;, 5), (&#39;d&#39;, 4), (&#39;e&#39;, 3)]
-a.sort(key=lambda x: x[1])
-print(a) # [(&#39;b&#39;, 1), (&#39;a&#39;, 2), (&#39;e&#39;, 3), (&#39;d&#39;, 4), (&#39;c&#39;, 5)]
-</pre></div>
-                </div><!-- /.entry-content -->
-        </article>
-</section>
 		<p class='visible-phone'>&nbsp;</p>
 		<hr class='visible-phone'>
         </div><!--/span-->
